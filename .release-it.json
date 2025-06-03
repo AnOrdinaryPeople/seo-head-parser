@@ -1,0 +1,19 @@
+{
+  "npm": {
+    "publish": true,
+    "access": "public"
+  },
+  "github": {
+    "release": true,
+    "releaseName": "v${version}",
+    "web": true
+  },
+  "git": {
+    "commitMessage": "🔖 chore(release): v${version}",
+    "tagName": "v${version}",
+    "push": true
+  },
+  "hooks": {
+    "before:init": ["bun run lint"]
+  }
+}
